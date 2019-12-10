@@ -5,8 +5,12 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
+    <div className="row">
+      <div className="col-3">
+        <Sidebar />
+      </div>
+      <div className="col-9">
+      </div>
     </div>
   );
 }
