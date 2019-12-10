@@ -3,7 +3,7 @@ import React from 'react';
 function Sidebar() {
   return (
     <div className="sidebar">
-      <h2 className="logo">Vinstagram</h2>
+      <h3 className="logo">Vinstagram</h3>
       <input
         type="text"
         data-cy="name"
