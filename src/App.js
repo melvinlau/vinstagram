@@ -8,7 +8,8 @@ import {
 
 import './App.css';
 
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar/Sidebar';
+import AuthContext from './context/AuthContext';
 
 function App() {
   return (

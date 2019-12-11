@@ -10,7 +10,7 @@ import { render } from '@testing-library/react';
 import { shallow } from 'enzyme';
 
 import App from './App';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar/Sidebar';
 
 describe('<App />', () => {
 
