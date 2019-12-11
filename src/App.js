@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,22 +6,23 @@ import {
   Link
 } from "react-router-dom";
 
-import './App.css';
-
 import Sidebar from './components/Sidebar/Sidebar';
-import AuthContext from './context/AuthContext';
+import { UserContext, initialUserState } from './context/UserContext';
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(initialUserState);
   return (
-    <Router>
-      <div className="row">
-        <div className="col-3">
-          <Sidebar />
+    <UserContext.Provider value={initialUserState}>
+      <Router>
+        <div className="row">
+          <div className="col-3">
+            <Sidebar />
+          </div>
+          <div className="col-9">
+          </div>
         </div>
-        <div className="col-9">
-        </div>
-      </div>
-    </Router>
+      </Router>
+    </UserContext.Provider>
   );
 }
 
